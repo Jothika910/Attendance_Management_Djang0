@@ -20,7 +20,7 @@ from project1app import views as je
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', je.signup, name='signup'),
+    path('', je.index, name='index'),
     path('details', je.details, name='details'),
     path('newpage', je.newpage, name='newpage'),
     path('homepage', je.homepage, name='homepage'),
