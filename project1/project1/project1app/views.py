@@ -10,7 +10,7 @@ from project1app.models import salarytable
 
 # Create your views here.
 @csrf_exempt
-def signup(request):
+def index(request):
     if request.method == "POST":
         # a=json.loads(request.body)
         print(request.POST.get('fname'))
@@ -24,7 +24,7 @@ def signup(request):
         b = {'message': "successfully created"}
         return redirect('details')
 
-    return render(request,'signup.html')
+    return render(request,'index.html')
 def details(request):
     if request.method=="POST":
         resp_obj=detailstable.objects.create(username=request.POST.get('username'),
