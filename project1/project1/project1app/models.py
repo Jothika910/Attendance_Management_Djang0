@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models
-class signuptable(models.Model):
+class indextable(models.Model):
    username=models.CharField(max_length=256)
    password=models.IntegerField()
    email=models.EmailField()
